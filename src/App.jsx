@@ -1,12 +1,31 @@
-import './App.css'
-import AppHeader from './components/AppHeader';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import HomePage from "./pages/HomPage";
+import MainLayout from "./components/layouts/MainLayout";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <>
-      <AppHeader />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <HomePage />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <MainLayout>
+              <NotFoundPage />
+            </MainLayout>
+          } />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

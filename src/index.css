@@ -1,20 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  font-family: 'Neue Haas Grotesk Text Pro', -apple-system, sans-serif;
-  font-weight: 400;
-
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --color-primary-normal: #FFC700;
-  --color-neutral-subdued: #FFFFFF;
-  --color-neutral-accent: #D2D2D2;
-  --color-neutral-invert-accent: #1F1F1F;
-  --color-bg-neutral-subdued: #383A42;
+  /* Global variables */
+  --background-primary-normal: #FFC700;
+  --background-primary-accent: #C79B12;
+  --background-neutral-subdued: #383A42;
+  --background-neutral-normal:#1F2023;
+  --background-neutral-accent: #131415;
+  --border-primary-normal: #FFC700;
+  --border-primary-subdued: #FFE8AB;
+  --text-neutral-invert-accent: #1F1F1F;
+  --text-neutral-accent: #D2D2D2;
 }
 
+body {
+  font-family: 'Neue Haas Grotesk Text Pro', -apple-system, sans-serif;
+  font-weight: 500;
+}
