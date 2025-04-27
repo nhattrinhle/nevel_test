@@ -6,6 +6,7 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState("HOME");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -13,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center w-full max-md:max-w-full md:h-auto md:relative max-md:h-[60px] max-md:px-[20px] max-md:py-[12px] px-[40px] py-[20px]">
+      <header className="bg-[var(--background-neutral-accent)] flex justify-between items-center w-full max-md:max-w-full md:h-auto md:relative max-md:h-[60px] max-md:px-[20px] max-md:py-[12px] px-[40px] py-[20px]">
         {/* Left section containing toggle, logo and desktop nav */}
         <div className="flex items-center gap-10 max-md:gap-4">
           {/* Mobile Toggle Button - only visible on mobile */}
@@ -58,7 +59,7 @@ const Header = () => {
           {/* Logo and Desktop Navigation container */}
           <div className="flex items-center gap-6">
             <Logo />
-            <DesktopNav />
+            <DesktopNav activeNav={activeNav} setActiveNav={setActiveNav} />
           </div>
         </div>
 
@@ -67,7 +68,7 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu - appears when toggle is clicked */}
-      {isMobileMenuOpen && <MobileMenu />}
+      {isMobileMenuOpen && <MobileMenu activeNav={activeNav} setActiveNav={setActiveNav} />}
     </>
   );
 };
