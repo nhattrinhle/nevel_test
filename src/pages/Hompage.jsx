@@ -1,9 +1,7 @@
-function Homepage() {
+function HomePage() {
   return (
-    <main>
-      {/* <Header /> */}
-    </main>
+    <><p>HOMEPAGE</p></>
   );
 }
 
-export default Homepage;
+export default HomePage;
