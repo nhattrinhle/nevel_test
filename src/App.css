@@ -2,27 +2,3 @@
   margin: 0 auto;
   text-align: center;
 }
-
-.bg-neutral-accent {
-  background-color: #131415
-}
-
-.bg-neutral-normal {
-  background-color: #1F2023
-}
-
-.text-primary-normal {
-  color: #FFC700
-}
-
-.text-neutral-subdued {
-  color: #FFFFFF
-}
-
-.text-neutral-accent {
-  color: #D2D2D2
-}
-
-.text-neutral-invert-accent {
-  color: #1F1F1F
-}

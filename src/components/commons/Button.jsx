@@ -1,22 +1,13 @@
 import React from "react";
 
-const Button = ({
-  children,
-  variant = "primary",
-  className = "",
-  ...props
-}) => {
-  const baseStyles =
-    "px-8 py-2 text-base italic font-black leading-6 uppercase rounded-[100px]";
-
-  const variantStyles = {
-    primary: "bg-yellow-400 text-stone-900",
-    secondary: "border border-yellow-400 border-solid text-neutral-300",
-  };
+const Button = ({ children, className, disabled = false, ...props }) => {
+  const baseStyles = "rounded-[100px] transition-colors duration-300 cursor-pointer";
+  const disabledStyles = "opacity-50 cursor-not-allowed";
 
   return (
     <button
-      className={`${baseStyles} ${variantStyles[variant]} ${className}`}
+      className={`${baseStyles} ${disabled ? disabledStyles : ""} ${className}`}
+      disabled={disabled}
       {...props}
     >
       {children}
