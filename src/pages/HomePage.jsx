@@ -1,6 +1,12 @@
+import React from "react";
+
+import Slider from "../components/Slider";
+
 function HomePage() {
   return (
-    <><p>HOMEPAGE</p></>
+    <>
+      <Slider />
+    </>
   );
 }
 

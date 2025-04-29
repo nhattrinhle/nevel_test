@@ -7,10 +7,13 @@
   --background-neutral-subdued: #383A42;
   --background-neutral-normal:#1F2023;
   --background-neutral-accent: #131415;
+  --background-neutral-invert-normal: #FFFFFF;
+  --background-custom-red: #FF0000;
   --border-primary-normal: #FFC700;
   --border-primary-subdued: #FFE8AB;
   --text-neutral-invert-accent: #1F1F1F;
   --text-neutral-accent: #D2D2D2;
+  --text-neutral-subdued: #FFFFFF;
 }
 
 body {
