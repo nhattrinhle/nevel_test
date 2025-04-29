@@ -12,6 +12,10 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       <header className="bg-[var(--background-neutral-accent)] flex justify-between items-center w-full max-md:max-w-full md:h-auto md:relative max-md:h-[60px] max-md:px-[20px] max-md:py-[12px] px-[40px] py-[20px]">
@@ -68,7 +72,14 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu - appears when toggle is clicked */}
-      {isMobileMenuOpen && <MobileMenu activeNav={activeNav} setActiveNav={setActiveNav} />}
+      {isMobileMenuOpen && (
+        <MobileMenu
+          isOpen={isMobileMenuOpen}
+          activeNav={activeNav}
+          setActiveNav={setActiveNav}
+          onClose={closeMobileMenu}
+        />
+      )}
     </>
   );
 };

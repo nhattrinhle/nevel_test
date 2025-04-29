@@ -3,10 +3,9 @@ import Header from "./header/Header";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="w-full min-w-full overflow-x-hidden">
       <Header />
-      <main>{children}</main>
-      {/* Footer */}
+      <main className="w-full mx-auto">{children}</main>
     </div>
   );
 };
