@@ -1,12 +1,45 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using **React** and **Vite**.
 
-Currently, two official plugins are available:
+## 🚀 How to Run the Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Install dependencies
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Run the development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## ✅ Output
+
+Link Product: [https://nevel-test-tau.vercel.app](https://nevel-test-tau.vercel.app)
+
+---
+
+## 📸 Screenshots
+
+### 1. Desktop Screen
+![Desktop Screenshot](./public/screen_desktop.png)
+
+### 2. Mobile Screen
+![Mobile Screenshot](./public/screen_mobile.png)
+
+### 3. Menu in Mobile Screen
+![Mobile Menu Screenshot](./public/screen_mobile_menu.png)
+
+Feel free to contribute or raise issues if needed.
+
