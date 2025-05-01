@@ -17,4 +17,4 @@ const PromoSectionHeader = ({ title, onNext, onPrev, hasNavigation = true }) => 
   )
 }
 
-export default PromoSectionHeader;  
+export default PromoSectionHeader;
