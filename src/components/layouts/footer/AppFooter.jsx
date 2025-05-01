@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+
 import FooterColumn from "./FooterColumn";
 import FooterLinks from "./FooterLinks";
 import InstallAppButton from "./InstallAppButton";

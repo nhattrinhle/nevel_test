@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./header/Header";
-import Footer from "./footer/footer";
+import Footer from "./footer/AppFooter";
 
-const Layout = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
     <div className="w-full min-w-full overflow-x-hidden">
       <Header />
@@ -12,4 +12,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default MainLayout;
