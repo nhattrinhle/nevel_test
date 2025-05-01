@@ -14,13 +14,13 @@ function NFTDropsCalendar() {
       <div className="flex flex-col gap-2 w-full">
         <PromoSectionHeader title="NFT Drops Calendar" />
 
-        <div className="flex h-[240px] w-full">
+        <div className="flex h-[240px] max-md:h-[171px] w-full">
           {images.map((image) => (
             <div key={image.id} className="w-full h-full aspect-video">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover object-center rounded-xl"
+                className="w-full h-full object-cover object-left-top rounded-xl"
                 loading="lazy"
               />
             </div>

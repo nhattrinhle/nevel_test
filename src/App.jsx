@@ -18,11 +18,7 @@ function App() {
         />
         <Route
           path="*"
-          element={
-            <MainLayout>
-              <NotFoundPage />
-            </MainLayout>
-          } />
+          element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
