@@ -37,7 +37,7 @@ const FeaturesBar = () => {
   ];
 
   return (
-    <section className="flex lg:px-59 bg-[var(--background-neutral-normal)] min-lg:h-[121.88px] h-[92px]">
+    <section className="flex xl:px-59 max-xl:px-5 bg-[var(--background-neutral-normal)] min-lg:h-[121.88px] h-[92px]">
       <div className="flex max-lg:grid max-lg:grid-cols-6 max-lg:place-items-center justify-between items-center size-full max-lg:py-4">
         {features.map((feature, index) => (
           <FeatureItem key={index} icon={feature.icon} isNew={feature?.isNew} title={feature.title} />
